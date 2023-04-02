@@ -17,4 +17,10 @@ const { title, page = "" } = Astro.props;
     <slot />
   </body>
 </html>
-<style is:global></style>
+<style lang="scss" is:global>
+@use '../styles/global.scss'
+body{
+  background-color: #999;
+  width: 100%;
+}
+</style>
