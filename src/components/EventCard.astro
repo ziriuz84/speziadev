@@ -1,0 +1,38 @@
+---
+export type Event = {
+  name: string;
+  data: string;
+  hour: string;
+  location: string;
+  free: boolean;
+  registration: boolean;
+  author: string;
+  organizer:string;
+  link: string;
+  description: string;
+  shortDescription: string;
+  photoUrl?: string;
+};
+export interface Props {
+  home: boolean;
+  event: Event;
+}
+
+const { home, event } = Astro.props;
+---
+
+<a href={event.link} title={event.name}>
+  <div class="eventCard">
+    <h3>{event.name}</h3>
+    {event.photoUrl && <img src={event.photoUrl} alt=`Locandina dell'evento ${event.name}` />}
+    <div class="data">{event.data} alle ore {event.hour}</div>
+    <div class="location">{event.location}</div>
+    {event.free && <div class="price">Gratis</div>}
+    <div class="author">{event.author}</div>
+    <div class="description">
+      {home ? event.shortDescription : event.description}
+    </div>
+  </div>
+</a>
+<style lang="scss">
+</style>

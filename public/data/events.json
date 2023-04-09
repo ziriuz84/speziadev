@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Vale la pena imparare Zig?",
+    "data": "20/04/2023",
+    "hour": "18:30",
+    "location": "Officine Garibaldi, Via Vincenzo Gioberti, 39, Pisa",
+    "free": true,
+    "registration": true,
+    "author": "Giacomo Debidda",
+    "organizer": "Pisa.dev",
+    "link": "https://pisa.dev/event/zig",
+    "description": "<p>Abbiamo davvero bisogno di un nuovo linguaggio a basso livello quando ci sono già C, C++, Rust? Beh, se ci fosse un linguaggio semplice da mantenere, veloce da compilare, utilizzabile su un gran numero di architetture… perché no? Vediamo se vale la pena imparare Zig!</p><p>Zig è un linguaggio di programmazione la cui filosofia è quella di agevolare uno sviluppo software che sia robusto, prevedibile, deterministico.</p><p>In questa presentazione impareremo a: installare diverse versioni del compilatore Zig, allocare manualmente la memoria, scrivere i tests, gestire gli errori, utilizzare Zig in progetti esistenti, cross-compilare un binario Zig per diverse architetture.</p><p>Infine, faremo una carrellata dei progetti Zig più interessanti e citeremo altro materiale utile per orientarsi nel nascente ecosistema di questo linguaggio.",
+    "shortDescription": "Abbiamo davvero bisogno di un nuovo linguaggio a basso livello quando ci sono già C, C++, Rust? Beh, se ci fosse un linguaggio semplice da mantenere, veloce da compilare, utilizzabile su un gran numero di architetture… perché no? Vediamo se vale la pena imparare Zig!",
+    "photoUrl": "https://pisa.dev/_next/image?url=https%3A%2F%2Fdata.pisa.dev%2Fevents%2Fzig.png&w=3840&q=75"
+  }
+]
+
