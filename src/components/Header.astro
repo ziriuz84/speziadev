@@ -4,18 +4,26 @@ import Navigation from "./Navigation.astro";
 ---
 
 <header>
-  <Logo />
-  <Navigation />
+  <div class="wrapper">
+    <Logo />
+    <Navigation />
+  </div>
 </header>
 
 <style lang="scss">
-  @use '../style/global.scss' as *;
-    header {
-      background-color: white;
-      display: flex;
+  @use "../styles/global.scss" as *;
+  header {
+    background-color: white;
+    display: flex;
+    width: 100%;
+    .wrapper {
       width: 100%;
-      .wrapper{
-
-      }
+      max-width: $generalWidth;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
     }
+  }
 </style>
