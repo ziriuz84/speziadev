@@ -1,7 +1,17 @@
 $generalWidth: 1170px;
+$firstColor: black;
+$secondColor: orange;
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+  transition: all .4s;
+  &:hover {
+    color: $secondColor;
+  }
 }
 section {
   .wrapper {
