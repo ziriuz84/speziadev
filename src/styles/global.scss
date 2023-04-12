@@ -16,7 +16,7 @@ a {
 }
 section {
   .wrapper {
-    width: $generalWidth;
+    max-width: $generalWidth;
     margin: 0 auto;
   }
 }
