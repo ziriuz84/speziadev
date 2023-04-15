@@ -37,55 +37,55 @@ const { home, event } = Astro.props;
   </div>
 </a>
 <style lang="scss">
-@use "../styles/global.scss" as *;
-a {
-  display: block;
-  background: white;
-  width: 49%;
-  transition: all .6s;
-  .eventCard {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-      h3 {
-      padding: 0 10px;
-    }
-    img {
-      max-width: 100%;
-    }
-    .eventData {
+  @use "../styles/global.scss" as *;
+  a {
+    display: block;
+    background: white;
+    width: 49%;
+    transition: all .6s;
+    .eventCard {
       display: flex;
-      flex-direction: column;
-      justify-content: space-between;
       align-items: flex-start;
-      padding: 10px;
-      >div {
-        margin-bottom: 5px;
+      flex-direction: column;
+        h3 {
+        padding: 0 10px;
       }
-      .data {
-        font-size: .8rem;
+      img {
+        max-width: 100%;
       }
-      .location {
-        font-weight:bold
-      }
-      .price {
-        color: $secondColor;
-        font-size: 1.3rem;
-        font-weight: bolder;
-      }
-      .author {
-        font-weight: bold;
-      }
-      .description{
-        font-size: .9rem;
+      .eventData {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 10px;
+        >div {
+          margin-bottom: 5px;
+        }
+        .data {
+          font-size: .8rem;
+        }
+        .location {
+          font-weight:bold
+        }
+        .price {
+          color: $secondColor;
+          font-size: 1.3rem;
+          font-weight: bolder;
+        }
+        .author {
+          font-weight: bold;
+        }
+        .description{
+          font-size: .9rem;
+        }
       }
     }
+    &:hover {
+      color: black;
+      -webkit-box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.75);
+      box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.75);
+    }
   }
-  &:hover {
-    color: black;
-    -webkit-box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.75);
-  }
-}
 </style>
