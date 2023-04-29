@@ -1,0 +1,45 @@
+---
+import { SOCIALS } from "../config";
+import socialIcons from "../assets/socialIcons";
+---
+
+<footer>
+  <div class="wrapper">
+    <div class="left">
+      Made with <i class="fa-solid fa-heart"></i> and <a
+        href="https://astro.build">AstroJS</a
+      >
+    </div>
+    <div class="right">
+      Code on <a href="https://github.com/ziriuz84/speziadev"
+        ><i class="fa-brands fa-github"></i></a
+      >
+    </div>
+  </div>
+</footer>
+
+<style lang="scss">
+  @use "../styles/global.scss" as *;
+  footer {
+    width: 100%;
+    padding: 20px;
+    background-color: #666;
+    .wrapper {
+      margin: 0 auto;
+      max-width: $generalWidth;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      div {
+        color: white;
+        a {
+          color: white;
+          transition: all .4s;
+          &:hover {
+            color: $secondColor;
+          }
+        }
+      }
+    }
+  }
+</style>
