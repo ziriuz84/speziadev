@@ -16,7 +16,7 @@
   {
     "name": "phpday 2023",
     "data": "18/05/2023",
-    "hour": "Due giornate piene",
+    "hour": "9:00 alle ore 18 del 19/5/2023",
     "location": "Hotel San Marco, Via Longhena 42, Verona",
     "free": false,
     "registration": true,
@@ -30,7 +30,7 @@
   {
     "name":"MERGE-it",
     "data": "12/05/2023",
-    "hour": "Due giornate piene",
+    "hour": "10:00 alle 19 del 13/05/2023",
     "location": "311 Verona, Lungadige Galtarossa 21, Verona",
     "free": true,
     "registration": false,
