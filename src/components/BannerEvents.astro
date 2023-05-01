@@ -1,9 +1,16 @@
 ---
 import EventCard from "./EventCard.astro";
+import moment from "moment";
 
 const calendarJSON = await fetch("http://localhost:3000/data/events.json").then(
   (r) => r.json()
 );
+console.log(calendarJSON);
+calendarJSON.sort((a, b) => {
+  const dateA = moment(a.data, "DD/MM/YYYY").toDate();
+  const dateB = moment(b.data, "DD/MM/YYYY").toDate();
+  return dateA.getTime() - dateB.getTime();
+});
 ---
 
 <section class="bannerEvent">
@@ -15,10 +22,15 @@ const calendarJSON = await fetch("http://localhost:3000/data/events.json").then(
     {
       calendarJSON.map((item) => {
         const today: Date = new Date();
-        const eventDate: Date = new Date(item.data);
-        if (eventDate > today) {
-          <EventCard home event={item} />;
-        }
+        const parts: string[] = item.data.split("/");
+        let day: number = parseInt(parts[0], 10);
+        let month: number = parseInt(parts[1], 10) - 1;
+        let year: number = parseInt(parts[2], 10);
+        const eventDate: Date = new Date(year, month, day);
+        console.log(today);
+        console.log(eventDate);
+        console.log(eventDate > today);
+        return eventDate > today ? <EventCard home event={item} /> : null;
       })
     }
   </div>

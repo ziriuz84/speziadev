@@ -12,6 +12,7 @@
   "dependencies": {
     "astro": "^2.1.9",
     "cypress": "^12.11.0",
+    "moment": "^2.29.4",
     "sass": "^1.61.0"
   }
 }
