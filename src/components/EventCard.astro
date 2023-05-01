@@ -28,7 +28,7 @@ const { home, event } = Astro.props;
     <div class="eventData">
       <div class="data">{event.data} alle ore {event.hour}</div>
       <div class="location">{event.location}</div>
-      {event.free && <div class="price">Gratis</div>}
+      <div class="price">{event.free && "Gratis"}</div>
       <div class="author">{event.author}</div>
       <div class="description">
         {home ? event.shortDescription : event.description}
@@ -41,8 +41,9 @@ const { home, event } = Astro.props;
   a {
     display: block;
     background: white;
-    width: 49%;
+    width: 47%;
     transition: all .6s;
+    min-height: 457px;
     .eventCard {
       display: flex;
       align-items: flex-start;
@@ -56,9 +57,10 @@ const { home, event } = Astro.props;
       .eventData {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
         align-items: flex-start;
         padding: 10px;
+        min-height: 189px;
         >div {
           margin-bottom: 5px;
         }
@@ -72,6 +74,7 @@ const { home, event } = Astro.props;
           color: $secondColor;
           font-size: 1.3rem;
           font-weight: bolder;
+          min-height:28px;
         }
         .author {
           font-weight: bold;

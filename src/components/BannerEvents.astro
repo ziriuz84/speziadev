@@ -5,7 +5,6 @@ import moment from "moment";
 const calendarJSON = await fetch("http://localhost:3000/data/events.json").then(
   (r) => r.json()
 );
-console.log(calendarJSON);
 calendarJSON.sort((a, b) => {
   const dateA = moment(a.data, "DD/MM/YYYY").toDate();
   const dateB = moment(b.data, "DD/MM/YYYY").toDate();
@@ -19,20 +18,19 @@ calendarJSON.sort((a, b) => {
     <p>
       Qui troverai tutti i prossimi eventi in zona e/o facilmente raggiungibili.
     </p>
-    {
-      calendarJSON.map((item) => {
-        const today: Date = new Date();
-        const parts: string[] = item.data.split("/");
-        let day: number = parseInt(parts[0], 10);
-        let month: number = parseInt(parts[1], 10) - 1;
-        let year: number = parseInt(parts[2], 10);
-        const eventDate: Date = new Date(year, month, day);
-        console.log(today);
-        console.log(eventDate);
-        console.log(eventDate > today);
-        return eventDate > today ? <EventCard home event={item} /> : null;
-      })
-    }
+    <div class="eventList">
+      {
+        calendarJSON.map((item) => {
+          const today: Date = new Date();
+          const parts: string[] = item.data.split("/");
+          let day: number = parseInt(parts[0], 10);
+          let month: number = parseInt(parts[1], 10) - 1;
+          let year: number = parseInt(parts[2], 10);
+          const eventDate: Date = new Date(year, month, day);
+          return eventDate > today ? <EventCard home event={item} /> : null;
+        })
+      }
+    </div>
   </div>
 </section>
 <style lang="scss">
@@ -41,6 +39,13 @@ calendarJSON.sort((a, b) => {
     .wrapper {
       max-width: $generalWidth;
       padding: 20px;
+      .eventList {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
     }
   }
 </style>
