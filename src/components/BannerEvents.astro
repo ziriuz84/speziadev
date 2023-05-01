@@ -1,10 +1,11 @@
 ---
 import EventCard from "./EventCard.astro";
 import moment from "moment";
+import calendarJSON from "../assets/data/events.json"
 
-const calendarJSON = await fetch("http://localhost:3000/data/events.json").then(
-  (r) => r.json()
-);
+// const calendarJSON = await fetch("../assets/data/events.json").then(
+//   (r) => r.json()
+// );
 calendarJSON.sort((a, b) => {
   const dateA = moment(a.data, "DD/MM/YYYY").toDate();
   const dateB = moment(b.data, "DD/MM/YYYY").toDate();
