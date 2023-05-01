@@ -12,7 +12,15 @@ const calendarJSON = await fetch("http://localhost:3000/data/events.json").then(
     <p>
       Qui troverai tutti i prossimi eventi in zona e/o facilmente raggiungibili.
     </p>
-    {calendarJSON.map((item) => <EventCard home event={item} />)}
+    {
+      calendarJSON.map((item) => {
+        const today: Date = new Date();
+        const eventDate: Date = new Date(item.data);
+        if (eventDate > today) {
+          <EventCard home event={item} />;
+        }
+      })
+    }
   </div>
 </section>
 <style lang="scss">
