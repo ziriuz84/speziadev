@@ -1,55 +1,20 @@
-# Astro Starter Kit: Basics
+# Spezia.dev official website
 
-```
-npm create astro@latest -- --template basics
-```
+Questo è il sorgente del sito di Spezia.dev, la community degli sviluppatori di Spezia e dintorni.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## Guida allo sviluppo
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Il sito è basato su [AstroJS](https://astro.build). La struttura delle cartelle è la seguente
 
-![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
+- **public**: tutto ciò che deve essere recuperato una volta online il sito
+- **src**: il sorgente vero e proprio del sito, diviso nelle sue componenti principali.
 
+Per avere un'installazione in locale è sufficiente fare un fork, clonare il repository e lanciare il comando `npm install`. Per avere una preview in locale è sufficiente lanciare il comando `npm run dev`.
 
-## 🚀 Project Structure
+## Come contribuire
 
-Inside of your Astro project, you'll see the following folders and files:
+Si può contribuire in molti modi, qui alcuni spunti
 
-```
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                | Action                                           |
-| :--------------------- | :----------------------------------------------- |
-| `npm install`          | Installs dependencies                            |
-| `npm run dev`          | Starts local dev server at `localhost:3000`      |
-| `npm run build`        | Build your production site to `./dist/`          |
-| `npm run preview`      | Preview your build locally, before deploying     |
-| `npm run astro ...`    | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- **Suggerimenti, critiche, proposte**: Tutti aiuti molto benvenuti, li potete fare tramite il forum di contatti sul sito o aprendo una issue qui sul repository. Siate più esplicativi possibili, in modo da aiutarci a capire
+- **Contribuire al codice**: Il framework di partenza è AstroJS, i linguaggi utilizzati HTML, SCSS, Javascript e Typescript. Se vedete qualcosa che non va o si potrebbe fare meglio non esitate ad aprire una issue e se ne discute. Fate un fork, mettete la vostra modifica e proponete la PR, non abbiate paura
+- **Proporre eventi**: Un grande aiuto ce lo date se ci proponete eventi. L'elenco degli eventi è messo nel file [src/assets/data/events.json]. Potete modificarlo nel vostro fork e fare una PR oppure proporlo tramite issue o form di contatti del sito.
