@@ -4,13 +4,51 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout title="Contatti - Spezia.dev" page="contacts">
   <main>
-    <h1>Contattaci</h1>
-    <p>Compila il form sottostante per contattarci</p>
-    <form action="" name="contacts" netlify>
-      <input type="text" name="name" id="">
-      <input type="email" name="email" id="">
-      <textarea name="message" id="" cols="30" rows="10"></textarea>
-      <button type="submit">Invia</button>
-    </form>
+    <div class="wrapper">
+      <h1>Contattaci</h1>
+      <p>Compila il form sottostante per contattarci</p>
+      <form action="" name="contacts" netlify>
+        <input type="text" placeholder="Nome" name="name" id="" />
+        <input type="email" placeholder="Email" name="email" id="" />
+        <textarea
+          name="message"
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Messaggio"></textarea>
+        <button type="submit">Invia</button>
+      </form>
+    </div>
   </main>
 </Layout>
+
+<style lang="scss">
+  @use "../styles/global.scss" as *;
+  .wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+
+  form {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    input,
+    textarea,
+    button {
+      margin-bottom: 1.2rem;
+    }
+    button {
+      background-color: $secondColor;
+      padding: 0.5rem 1rem;
+      border: 1px solid $secondColor;
+      border-radius: 6px;
+      color: white;
+      transition: all 0.4s;
+      &:hover {
+        background-color: white;
+        color: $secondColor;
+      }
+    }
+  }
+</style>
