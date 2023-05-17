@@ -11,6 +11,8 @@ Il sito è basato su [AstroJS](https://astro.build). La struttura delle cartelle
 
 Per avere un'installazione in locale è sufficiente fare un fork, clonare il repository e lanciare il comando `npm install`. Per avere una preview in locale è sufficiente lanciare il comando `npm run dev`.
 
+Trovate maggiori informazioni nel file [README-ASTRO](https://raw.githubusercontent.com/ziriuz84/speziadev/main/README-ASTRO.md)
+
 ## Come contribuire
 
 Si può contribuire in molti modi, qui alcuni spunti
