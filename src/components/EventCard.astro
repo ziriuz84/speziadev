@@ -24,14 +24,16 @@ const { home, event } = Astro.props;
 <a href={event.link} title={event.name}>
   <div class="eventCard">
     <h3>{event.name}</h3>
-    {event.photoUrl && <img src={event.photoUrl} alt=`Locandina dell'evento ${event.name}` />}
-    <div class="eventData">
-      <div class="data">{event.data} alle ore {event.hour}</div>
-      <div class="location">{event.location}</div>
-      <div class="price">{event.free && "Gratis"}</div>
-      <div class="author">{event.author}</div>
-      <div class="description">
-        {home ? event.shortDescription : event.description}
+    <div class="content">
+      {event.photoUrl && <img src={event.photoUrl} alt=`Locandina dell'evento ${event.name}` />}
+      <div class="eventData">
+        <div class="data">{event.data} alle ore {event.hour}</div>
+        <div class="location">{event.location}</div>
+        <div class="price">{event.free && "Gratis"}</div>
+        <div class="author">{event.author}</div>
+        <div class="description">
+          {home ? event.shortDescription : event.description}
+        </div>
       </div>
     </div>
   </div>
@@ -41,9 +43,10 @@ const { home, event } = Astro.props;
   a {
     display: block;
     background: white;
-    width: 47%;
+    width: 100%;
     transition: all .6s;
     min-height: 457px;
+    margin-bottom: 2rem;
     .eventCard {
       display: flex;
       align-items: flex-start;
@@ -51,10 +54,16 @@ const { home, event } = Astro.props;
         h3 {
         padding: 0 10px;
       }
+      .content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
       img {
-        max-width: 100%;
+        max-width: 40%;
       }
       .eventData {
+        width: 60%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -82,6 +91,7 @@ const { home, event } = Astro.props;
         .description{
           font-size: .9rem;
         }
+      }
       }
     }
     &:hover {
