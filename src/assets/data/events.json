@@ -1,30 +1,18 @@
 [
   {
-    "name": "phpday 2023",
-    "data": "18/05/2023",
-    "hour": "Due giornate piene",
-    "location": "Hotel San Marco, Via Longhena 42, Verona",
-    "free": false,
-    "registration": true,
-    "author": "AA.VV.",
-    "organizer": "GRUSP",
-    "description": "La conference annuale per gli sviluppatori dell'elefantino",
-    "shortDescription": "La conference annuale per gli sviluppatori dell'elefantino",
-    "link": "https://2023.phpday.it/",
-    "photoUrl": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F354302829%2F453357260740%2F1%2Foriginal.20220914-153941?w=940&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C2160%2C1080&s=3f8b96d2d8beb7269e2d16189f2ecdb8"
-  },
-  {
-    "name": "Disrupting full-text search industry with JavaScript",
-    "data": "19/05/2023",
-    "hour": "18:30",
-    "location": "Polo Fibonacci, Aula G - Pisa",
+    "name": "Google Cloud Platform + Copilot Trustworthiness",
+    "data": "19/6/2023",
+    "hour": "18:00",
+    "location": "Polo Fibonacci, Aula G, Pisa",
     "free": true,
     "registration": true,
-    "author": "Michele Riva",
+    "author": "Emanuele FAbbiani + Alessandro Puccetti",
     "organizer": "Pisa.dev",
-    "description": "Per il Meetup di Maggio di Pisa.dev avremo l'opportunità di avere con noi Michele Riva, Co-Founder e TC39 Delegate @OramaSearch, Google GDE e Microsoft MVP. Michele ci parlerà di Orama, il full-text search engine scritto in TypeScript che sta sviluppando.",
-    "shortDescription": "Per il Meetup di Maggio di Pisa.dev avremo l'opportunità di avere con noi Michele Riva, Co-Founder e TC39 Delegate @OramaSearch, Google GDE e Microsoft MVP.",
-    "link": "https://pisa.dev/event/oramasearch",
-    "photoUrl": "https://pisa.dev/_next/image?url=https%3A%2F%2Fdata.pisa.dev%2Fevents%2Foramasearch.jpeg&w=1920&q=75"
+    "link": "https://pisa.dev/event/gcp-copilot",
+    "description": "<p >In collaborazione con il GDG Pisa, il meet-up di Giugno vi offre due speaker al prezzo di uno! 🚀 Alessandro ed Emanuele ci accompagneranno in un viaggio che vedrà come protagonisti Google Cloud Platoform e l'assistente virtuale più famoso nella community degli sviluppatori: Copilot!</p><p>Dalla collaborazione tra Pisa.dev e GDG Pisa nasce questo meraviglioso evento di Giugno, che metterà in luce due argomenti affascinanti e attuali grazie ai talk dei nostri ospiti.</p>
+<p>Il primo talk sarà incentrato sulla transizione da Cloud Composer a Cloud Workflows. Saranno illustrati i notevoli miglioramenti di velocità, costo ed efficienza che questa migrazione comporta. Grazie a Cloud Workflows, è possibile ottenere un aumento di velocità fino a 10 volte rispetto a Cloud Composer, con una riduzione dei costi fino a 600 volte. Durante il talk, verranno condivisi esempi pratici e best practice per massimizzare i vantaggi offerti da questa transizione.</p>
+<p>Il secondo talk si concentrerà su GitHub Copilot, un assistente virtuale basato sull'intelligenza artificiale che sta rivoluzionando la scrittura del codice. Durante il talk, verranno esaminati i vantaggi di questo strumento, insieme alle preoccupazioni riguardo alla sua adozione diffusa. Saranno discussi studi che sollevano interrogativi sull'effetto sull'apprendimento e sulla sicurezza, offrendo spunti interessanti sulla futura evoluzione degli assistenti virtuali.</p>",
+    "shortDescription": "In collaborazione con il GDG Pisa, il meet-up di Giugno vi offre due speaker al prezzo di uno! 🚀 Alessandro ed Emanuele ci accompagneranno in un viaggio che vedrà come protagonisti Google Cloud Platoform e l'assistente virtuale più famoso nella community degli sviluppatori: Copilot!",
+    "photoUrl": "https://pisa.dev/_next/image?url=https%3A%2F%2Fdata.pisa.dev%2Fevents%2Fgcp-copilot.jpeg&w=1920&q=75"
   }
 ]
