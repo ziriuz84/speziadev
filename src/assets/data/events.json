@@ -1,5 +1,19 @@
 [
   {
+    "name": "From Geek to Great: Supercharging career development with soft skills",
+    "data": "20/07/2023",
+    "hour": "19:00",
+    "location": "La Nunziatina, Via la Nunziatina, 11, 56125 Pisa PI",
+    "free": true,
+    "registration": true,
+    "author": "Gabriele Santomaggio + Federico Paolinelli + Lorenzo Pieri",
+    "organizer": "Pisa.dev",
+    "link": "https://pisa.dev/event/geek-to-great",
+    "description": "<p>Un panel con due ospiti d'eccezione per festeggiare insieme il primo compleanno di Pisa.dev</p><p>Il 20 Luglio non perderti il panel 'From Geek to Great: Supercharging career development with soft skills'.</p><p>Il protagonisti del panel saranno Gabriele Santomaggio, Staff Software Engineer presso VMware e Federico Paolinelli, Senior Principal Software Engineer in Red Hat. A moderare la discussione sarà Lorenzo Pieri, Full Stack Software Engineer @ Birdie e Community Manager @ Schrödinger Hat.</p><p>Si parlerà di carriera, di soft skills e soprattutto, lasceremo un ampio spazio per le domande dal pubblico per accendere la discussione e rendere il tutto più interessante e divertente.</p><p>⏰ 20 Luglio 2023, a partire dalle 19:00</p><p>📍 La Nunziatina, Via la Nunziatina, 11, 56125 Pisa PI</p><p>Al termine del Panel ci fermeremo alla Nunziatina (https://lanunziatina.com/) per cenare tutti insieme e festeggiare insieme il compleanno di pisa.dev!</p>",
+    "shortDescription": "Un panel con due ospiti d'eccezione per festeggiare insieme il primo compleanno di Pisa.dev<br>Il 20 Luglio non perderti il panel 'From Geek to Great: Supercharging career development with soft skills'.",
+    "photoUrl": "https://pisa.dev/_next/image?url=https%3A%2F%2Fdata.pisa.dev%2Fevents%2Fgeek-to-great.jpeg&w=1920&q=75"
+  },
+  {
     "name": "Google Cloud Platform + Copilot Trustworthiness",
     "data": "19/06/2023",
     "hour": "18:00",
