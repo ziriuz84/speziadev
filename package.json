@@ -10,7 +10,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.16.1",
+    "astro": "^4.16.18",
     "cypress": "^13.6.3",
     "moment": "^2.30.1",
     "sass": "^1.70.0"
